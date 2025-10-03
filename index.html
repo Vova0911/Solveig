@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<style data-fls-preloader="true" rel="preload">
+			body > *:not(.fls-preloader) {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1.5s ease;
+  }
+  html[data-fls-preloader-loaded] body > *:not(.fls-preloader) {
+    opacity: 1;
+    pointer-events: all;
+  }
+  html[data-fls-preloader-loading] {
+    overflow: hidden;
+  }
+
+  /* 
+  html[data-fls-preloader-loaded] body > *:not(.fls-preloader) {
+    visibility: visible;
+    pointer-events: all;
+   
+  }
+  html[data-fls-preloader-loading] {
+    overflow: hidden; 
+    height: 100%;
+    touch-action: none;
+    overscroll-behavior: none; 
+  } */
+  /* html[data-fls-preloader-loaded] {
+    overflow: auto; 
+    height: auto;
+  } */
+  /* html[data-fls-preloader-loading] body > *:not(.fls-preloader) {
+    visibility: hidden;
+    pointer-events: none;
+  } */
+		</style>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1759487683589"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/app.min.js">
+		<link rel="modulepreload" crossorigin="" href="./js/marquee.min.js">
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1759487683589">
+		<link rel="stylesheet" crossorigin="" href="./css/marquee.min.css?v=1759487683589">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1759487683589">
+		<link rel="preload" as="style" href="./css/webfonts.min.css">
+		<link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="./css/webfonts.min.css">
+	</head>
+	<body>
+		<!-- Прелоадер -->
+		<div class="fls-preloader preloader">
+			<div class="site-name">
+				<span>Solveig</span>
+			</div>
+			<div class="fls-preloader__body">
+				<div class="fls-preloader__counter">0%</div>
+				<div class="fls-preloader__line">
+					<span></span>
+				</div>
+			</div>
+			<div class="preloader-gutters">
+				<div class="bar">
+					<div class="inner-bar"></div>
+				</div>
+				<div class="bar">
+					<div class="inner-bar"></div>
+				</div>
+				<div class="bar">
+					<div class="inner-bar"></div>
+				</div>
+				<div class="bar">
+					<div class="inner-bar"></div>
+				</div>
+				<div class="bar">
+					<div class="inner-bar"></div>
+				</div>
+				<div class="bar">
+					<div class="inner-bar"></div>
+				</div>
+				<div class="bar">
+					<div class="inner-bar"></div>
+				</div>
+				<div class="bar">
+					<div class="inner-bar"></div>
+				</div>
+			</div>
+			<div class="preloader-overlay"></div>
+		</div>
+		<!-- Контент -->
+		<div class="components">
+			<div class="components__item"></div>
+		</div>
+	</body>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preload" href="./assets/fonts/Satoshi-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="./assets/fonts/ClashDisplay-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="./assets/fonts/ClashDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="./assets/fonts/ClashDisplay-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="./assets/fonts/ClashDisplay-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="./assets/fonts/ClashDisplay-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="shortcut icon" href="assets/img/favicon.ico">
+	<title>Home Page</title>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header">
+				<div class="header__container">
+					<div class="header__logo">
+						<picture>
+							<img alt="Image" src="./assets/img/header/logo.webp">
+						</picture>
+					</div>
+					<div class="header__block">
+						<div data-fls-menu="" class="header__menu menu">
+							<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+								<span></span>
+							</button>
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="work.html" class="menu__link">WORK</a>
+									</li>
+									<li class="menu__item">
+										<a href="contact.html" class="menu__link">Contact</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<a class="header__button" href="getintouch.html">Get in touch</a>
+					</div>
+					<!-- <include src="@components/layout/menu/menu.html" locals='{"active":"Home"}'></include> -->
+				</div>
+			</header>
+			<main class="page page--home">
+				<section class="brand">
+					<div class="brand__container">
+						<div class="brand__content">
+							<div class="brand__label">
+								<img class="brand__title" src="./assets/img/header/finn.svg" alt="Image">
+								<p class="brand__text">Brand Designer from BerlinS</p>
+							</div>
+							<div data-fls-marquee="" data-fls-marquee-pause="">
+								<div>Branding</div>
+								<div>Logo Design</div>
+								<div>Social Media Branding</div>
+							</div>
+							<div class="brand__body">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/brand/01-600.webp" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/brand/01-1200.webp" type="image/webp">
+									<img class="brand__images" alt="Image" src="./assets/img/brand/01.webp">
+								</picture>
+								<div class="brand__circle">
+									<picture>
+										<img class="brand__image" alt="Image" src="./assets/img/brand/fout-star.webp">
+									</picture>
+								</div>
+							</div>
+						</div>
+						<div class="brand__stats stats-brand">
+							<article class="stats-brand__cads">
+								<h2 class="stats-brand__title">Clients</h2>
+								<div data-fls-watcher="" class="stats-brand__item">
+									<span class="stats-brand__span" data-fls-digcounter="">200</span>
+									+
+								</div>
+							</article>
+							<article class="stats-brand__cads">
+								<h2 class="stats-brand__title">Projects</h2>
+								<div data-fls-watcher="" class="stats-brand__item">
+									<span class="stats-brand__span" data-fls-digcounter="">300</span>
+									+
+								</div>
+							</article>
+							<article class="stats-brand__cads">
+								<h2 class="stats-brand__title">Follower</h2>
+								<div data-fls-watcher="" class="stats-brand__item">
+									<span class="stats-brand__span" data-fls-digcounter="">90</span>
+									K
+								</div>
+							</article>
+							<article class="stats-brand__cads">
+								<h2 class="stats-brand__title">Happy Clients</h2>
+								<div data-fls-watcher="" class="stats-brand__item">
+									<span class="stats-brand__span" data-fls-digcounter="">100</span>
+									%
+								</div>
+							</article>
+						</div>
+						<div class="brands__clients clients-brands">
+							<h2 class="clients-brands__title">My Clients</h2>
+							<div class="clients-brands__column">
+								<ul class="clients-brands__list">
+									<li class="clients-brands__item">
+										<a class="clients-brands__link" href="#">
+											<img class="clients-brands__iamges" src="./assets/img/clients/01.svg" alt="Image">
+										</a>
+									</li>
+									<li class="clients-brands__item">
+										<a class="clients-brands__link" href="#">
+											<img class="clients-brands__iamges" src="./assets/img/clients/02.svg" alt="Image">
+										</a>
+									</li>
+									<li class="clients-brands__item">
+										<a class="clients-brands__link" href="#">
+											<img class="clients-brands__iamges" src="./assets/img/clients/07.svg" alt="Image">
+										</a>
+									</li>
+									<li class="clients-brands__item">
+										<a class="clients-brands__link" href="#">
+											<img class="clients-brands__iamges" src="./assets/img/clients/04.svg" alt="Image">
+										</a>
+									</li>
+									<li class="clients-brands__item">
+										<a class="clients-brands__link" href="#">
+											<img class="clients-brands__iamges" src="./assets/img/clients/05.svg" alt="Image">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="services">
+					<div class="services__container">
+						<div class="services__brand">
+							<div class="services__block">
+								<div class="services__title">Brand Services</div>
+								<img class="services__images" src="./assets/img/services/star.svg" alt="Image">
+							</div>
+							<div class="services__hero">
+								<div class="services__image">
+									<picture>
+										<img alt="Image" src="./assets/img/services/h.webp">
+									</picture>
+								</div>
+								<div class="services__about">
+									<div class="services__label">Hi, I'm Finn</div>
+									<div class="services__text">Brand Designer</div>
+								</div>
+							</div>
+						</div>
+						<div class="services__content content-services">
+							<article class="content-services__cards">
+								<div class="content-services__block">
+									<div class="content-services__item">
+										<div class="content-services__row"></div>
+										<h3 class="content-services__title">Branding</h3>
+										<!-- <div class="content-services__title"></div> -->
+									</div>
+								</div>
+								<div class="content-services__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo
+            quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Massa
+            tempor nec feugiat nisl.
+								</div>
+							</article>
+							<article class="content-services__cards">
+								<div class="content-services__block">
+									<div class="content-services__item">
+										<div class="content-services__row"></div>
+										<h3 class="content-services__title">Branding</h3>
+										<!-- <div class="content-services__title"></div> -->
+									</div>
+								</div>
+								<div class="content-services__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo
+            quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Massa
+            tempor nec feugiat nisl.
+								</div>
+							</article>
+							<article class="content-services__cards">
+								<div class="content-services__block">
+									<div class="content-services__item">
+										<div class="content-services__row"></div>
+										<h3 class="content-services__title">Branding</h3>
+										<!-- <div class="content-services__title"></div> -->
+									</div>
+								</div>
+								<div class="content-services__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo
+            quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Massa
+            tempor nec feugiat nisl.
+								</div>
+							</article>
+						</div>
+					</div>
+				</section>
+				<section class="gallery">
+					<div class="gallery__container">
+						<div class="gallery__row" data-fls-marquee-row="" data-fls-marquee="" data-fls-marquee-pause="">
+							<div class="gallery__item">Gallery</div>
+							<div class="gallery__item">Gallery</div>
+							<div class="gallery__item">Gallery</div>
+						</div>
+						<div class="gallery__block">
+							<div class="gallery__body">
+								<div class="gallery__images">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/gallery/01-600.webp" type="image/webp">
+										<img class="gallery__image" alt="Image" src="./assets/img/gallery/01.webp">
+									</picture>
+									<button class="gallery__button">View</button>
+								</div>
+								<div class="gallery__card">
+									<h3 class="gallery__title">Invision Studio</h3>
+									<p class="gallery__text">Packaging</p>
+								</div>
+							</div>
+							<div class="gallery__body">
+								<div class="gallery__images">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/gallery/02-600.webp" type="image/webp">
+										<img class="gallery__image" alt="Image" src="./assets/img/gallery/02.webp">
+									</picture>
+								</div>
+								<div class="gallery__card">
+									<h3 class="gallery__title">Invision Studio</h3>
+									<p class="gallery__text">Packaging</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="work">
+					<div class="work__container">
+						<div class="work__row" data-fls-marquee-pass="" data-fls-marquee="" data-fls-marquee-pause="">
+							<div class="work__item">Let's work Together</div>
+							<div class="work__item">Let's work Together</div>
+							<div class="work__item">Let's work Together</div>
+						</div>
+						<div class="work__block">
+							<img src="./assets/img/header/star.svg" class="work__image" alt="Image">
+							<div class="work__title">
+								<p>Let's create</p>
+								<p>your new brand</p>
+							</div>
+							<button class="work__button">get in touch</button>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container">
+					<div class="footer__block">
+						<div class="footer__logo">
+							<img class="footer__image" src="./assets/img/footer/logo.svg" alt="Image">
+						</div>
+						<div class="footer__nav">
+							<div class="footer__menu">
+								<h4 class="footer__title">Pages</h4>
+								<div class="footer__menu menu-footer">
+									<nav class="menu-footer__body">
+										<ul class="menu-footer__list">
+											<li class="menu-footer__item">
+												<a href="#" class="menu-footer__link">Home</a>
+											</li>
+										</ul>
+										<ul class="menu-footer__list">
+											<li class="menu-footer__item">
+												<a href="#" class="menu-footer__link">Work</a>
+											</li>
+										</ul>
+										<ul class="menu-footer__list">
+											<li class="menu-footer__item">
+												<a href="#" class="menu-footer__link">Work Single</a>
+											</li>
+										</ul>
+									</nav>
+									<button type="button" data-fls-menu="" class="menu-footer__button">More TEmplates</button>
+								</div>
+							</div>
+							<div class="footer__utility">
+								<h4 class="footer__title">Utility Pages</h4>
+								<ul class="menu-footer__list">
+									<li class="menu-footer__item">
+										<a href="#" class="menu-footer__link">404 Error Page</a>
+									</li>
+								</ul>
+								<ul class="menu-footer__list">
+									<li class="menu__item">
+										<a href="#" class="menu-footer__link">Password Protected</a>
+									</li>
+								</ul>
+								<ul class="menu-footer__list">
+									<li class="menu-footer__item">
+										<a href="#" class="menu-footer__link">Styleguide</a>
+									</li>
+								</ul>
+								<ul class="menu-footer__list">
+									<li class="menu-footer__item">
+										<a href="#" class="menu-footer__link">Licensing</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="footer__by">
+						<div class="footer__text">© 2022 Made by Pawel Gola. Powered by Webflow.</div>
+						<div class="footer__list">
+							<a href="#" class="footer__link">Privacy</a>
+							<a href="#" class="footer__link">Imprint</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
