@@ -10391,7 +10391,7 @@ gsapWithCSS.from(".footer__block", {
   duration: 1.5,
   ease: "power3.out"
 });
-gsapWithCSS.from(".footer__by, .footer__list a", {
+gsapWithCSS.from(".footer__by, .footer__link a", {
   scrollTrigger: {
     trigger: ".footer",
     start: "top 90%",
