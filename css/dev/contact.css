@@ -373,11 +373,22 @@
   text-align: center;
   align-items: center;
 }
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
 @media (max-width: 68.4375em){
   .services__container {
     flex-direction: column;
   }
 }
+
 @media (max-width: 42.5em){
   .back__body {
     flex-direction: column;
@@ -389,12 +400,14 @@
     align-self: flex-end;
   }
 }
+
 @media (max-width: 25em){
   .services__block {
     align-items: center;
     text-align: center;
   }
 }
+
 @media (max-width: 20em){
   .stats-brand {
     gap: 1.875rem;
@@ -490,6 +503,7 @@
     padding-block: 1.4375rem;
   }
 }
+
 @media (min-width: 20em) and (max-width: 114.375em){
   .stats-brand {
     gap: clamp( 1.875rem , 1.00082781456875rem  +  4.3708609272vw , 6rem );
@@ -585,6 +599,7 @@
     padding-block: clamp( 1.4375rem , 0.89445364238125rem  +  2.7152317881vw , 4rem );
   }
 }
+
 @media (min-width: 114.375em){
   .stats-brand {
     gap: 6rem;
@@ -680,6 +695,7 @@
     padding-block: 4rem;
   }
 }
+
 @media (any-hover: hover){
   .block-working__button:hover {
     transform: translate(-50%, -50%) scale(1.06);

@@ -12,7 +12,6 @@ gsapWithCSS.registerPlugin(
   SlowMo,
   SplitText
 );
-ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
 gsapWithCSS.killTweensOf(".block-working__body");
 gsapWithCSS.from(".block-working__body", {
   scrollTrigger: {

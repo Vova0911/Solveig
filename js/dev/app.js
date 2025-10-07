@@ -10559,6 +10559,23 @@ gsapWithCSS.from(".back__right", {
   delay: 0.4,
   ease: "back.out(1.7)"
 });
+gsapWithCSS.from(".brand__circle", {
+  scrollTrigger: {
+    trigger: ".brand__body",
+    start: "top 80%",
+    toggleActions: "play none none reverse"
+  },
+  y: 50,
+  // плавне підняття
+  scale: 0.8,
+  // трохи менше на старті
+  opacity: 0,
+  // з прозорості
+  duration: 1,
+  // час появи
+  ease: "power3.out"
+  // м’яка крива руху
+});
 export {
   Draggable as D,
   ExpoScaleEase as E,

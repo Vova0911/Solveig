@@ -268,6 +268,12 @@ body {
   .icon-menu {
     cursor: default;
   }
+}@media (max-width: 47.99875em) and (any-hover: hover){
+  .menu__link:hover {
+    background-color: #fff;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); /* М'яка тінь */
+    transform: scale(1.05); /* Збільшення на 5% */
+  }
 }@media (max-width: 47.99875em){
   .menu__body {
     position: fixed;
@@ -417,6 +423,12 @@ body {
   .footer__nav {
     gap: clamp( 1.5rem , 1.1821192053rem  +  1.5894039735vw , 3rem );
   }
+}@media (min-width: 47.99875em) and (any-hover: hover){
+  .menu__link:hover {
+    background-color: #c9f532; /* Трохи темніший колір при наведенні */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); /* М'яка тінь */
+    transform: scale(1.05); /* Збільшення на 5% */
+  }
 }@media (min-width: 114.375em){
   .header__logo {
     width: 11.6875rem;
@@ -443,11 +455,6 @@ body {
     gap: 3rem;
   }
 }@media (any-hover: hover){
-  .menu__link:hover {
-    background-color: #c9f532; /* Трохи темніший колір при наведенні */
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); /* М'яка тінь */
-    transform: scale(1.05); /* Збільшення на 5% */
-  }
   .header__button:hover {
     scale: 1.1;
   }
