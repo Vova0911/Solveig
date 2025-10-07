@@ -399,6 +399,7 @@ body {
   max-width: 100%;
 }
 .gallery__button {
+  color: #000;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -474,6 +475,7 @@ body {
   text-transform: uppercase;
 }
 .work__button {
+  color: #000;
   background-color: #d2f65a;
   display: flex;
   align-items: center;
